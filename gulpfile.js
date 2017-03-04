@@ -24,7 +24,7 @@ gulp.task('testLess',function () {
 })
 //scss编译
 gulp.task('testScss',function () {
-	gulp.src('src/scss/main.scss')
+	gulp.src('scss/main.scss')
 		.pipe(less())
 		.pipe(gulp.dest('dist/src/css'));	
 })
@@ -36,7 +36,7 @@ gulp.task("concatJS",function(){
 })
 //处理images
 gulp.task('imagemin', function() {
-	gulp.src('src/images/*.{png,jpg,gif}')
+	gulp.src('images/*.{png,jpg,gif}')
 		.pipe(imagemin())
 	  	.pipe(gulp.dest('dist/images/'))
 });
