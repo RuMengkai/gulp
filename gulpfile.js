@@ -25,7 +25,7 @@ gulp.task('testLess',function () {
 //scss编译
 gulp.task('testScss',function () {
 	gulp.src('scss/main.scss')
-		.pipe(less())
+		.pipe(scss())
 		.pipe(gulp.dest('dist/src/css'));	
 })
 //合并js
